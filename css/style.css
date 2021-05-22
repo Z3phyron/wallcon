@@ -1,0 +1,537 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    color: rgb(0, 0, 0);
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+header .logo .icon {
+    color: #4e78db;
+}
+
+header .menu-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header .menu {
+    margin-left: auto;
+}
+
+.dark  header .menu-item .link {
+    color: #fff;
+}
+
+ .link::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #4e78db;
+    display: block;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.link:hover {
+    color: #1d1c27;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+
+
+.dark header .mobile {
+    background: #643cd3;
+}
+
+
+
+.dark header{
+    background: rgb(22, 22, 22);
+   
+}
+
+.dark .logo {
+ color: #ffffff;
+}
+.dark .logo .icon{
+ color: #643cd3;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.dark .menu {
+    margin-left: auto;
+}
+
+a {
+    color: #1d1c27;
+}
+
+.dark a{
+    color: #fff;
+}
+
+
+
+
+
+.dark-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 20px;
+    margin-bottom: 16px;
+    color: #a0a0a0;
+}
+
+.dark-toggle .sun {
+    display: none;
+}
+
+.dark .dark-toggle .sun {
+    display: block;
+}
+.dark .dark-toggle .moon {
+    display: none;
+}
+
+.dark-toggle .icon {
+    font-size: 15pt;
+}
+
+.menu-item .link {
+    color: rgb(148, 147, 147);
+    font-size: 14pt;
+}
+
+.menu-item .mobile {
+    background: #4e78db;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #fff;
+    transition: .3s;
+}
+
+.mobile:hover {
+    background: #643cd3;
+}
+
+
+
+.toggle {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+header {
+    height: 10vh;
+    padding: 0 5%;
+    z-index: 999;
+}
+
+.dark .menu {
+    background: rgb(38, 38, 38);
+    color: #fff;
+}
+
+.dark .link {
+    color: #fff;
+}
+
+
+.navbar-container.dark .toggle {
+    background: #643cd3;
+}
+
+.dark-toggle {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+    .toggle {
+        background: #4e78db;
+        display: block;
+        width: 40px;
+        height: 35px;
+        position: relative;
+        transition: .5s;
+        padding: 20px;
+        border-radius:  8px;
+    }
+
+    .toggle .bar {
+        width: 80%;
+        height: 6px;
+        margin:0 auto;
+        background-color: #fff;
+        border-radius: 50px;
+        position: absolute;
+        left: 10%;
+        top: 0;
+        transition: .3s;
+    }
+
+   
+
+    .toggle #bar-3 {
+        transform: translateY(28px);
+    }
+
+    .toggle #bar-2 {
+        transform: translateY(16px);
+    }
+
+    .toggle #bar-1 {
+        transform: translateY(5px);
+    }
+
+
+    .toggle.active #bar-1 {
+        transform: translateY(15px) rotate(225deg);
+    }
+
+    .toggle.active #bar-2 {
+        
+        opacity: 0;
+    }
+
+    .toggle.active #bar-3 {
+        transform: translateY(15px)rotate(-225deg);
+    }
+
+    .menu {
+        position: absolute;
+        top: -100vh;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        background: rgb(244, 242, 242);
+        transition: .5s;
+        z-index: -1;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+   header .menu .menu-item {
+        display: block;
+        margin: 30px auto;
+    }
+
+    header .menu.active {
+        top: 9vh;
+    }
+
+}
+
+
+
+
+
+
+/* herooo/////////// */
+
+.hero {
+    margin-top: 15vh;
+    background: #4e78db;
+    padding: 5%  7%;
+}
+.dark {
+    background: rgb(22, 22, 22);
+    color: #fff;
+}
+
+.dark .hero {
+    background: #643cd3;
+    width: 100%;
+}
+
+.hero .hero-content {
+    width: 60%;
+    color: #fff;
+}
+
+.hero .hero-content .hero-heading {
+    font-size: 30pt;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-shadow: 1px 5px 5px rgba(78, 77, 77, 0.274);
+}
+
+.hero .hero-content .hero-text  {
+    font-size: 20px;
+}
+
+.dark .sec-2 {
+    background: rgb(22, 22, 22);
+    color: #fff;
+}
+
+.sec-2 {
+    text-align: center;
+    padding-top: 15vh;
+    background: rgba(160, 158, 158, 0.055);
+}
+
+.sec-2 .title-heading {
+    font-size: 26pt;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sec-2 .title-text  {
+    font-size: 20px;
+
+}
+
+.sec-2 .wallet {
+    width: 160px;
+    margin:0  30px 30px;
+}
+
+.sec-2 .wallets {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10vh auto 0;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+
+.dark .timer {
+    background: rgb(22, 22, 22);
+}
+
+.timer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+.timer .counter-card {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    font-size: 24pt;
+    text-align: center;
+    align-items: center;
+    font-weight: 800;
+    color: #4e78db;
+    justify-content: space-between;
+
+    padding: 20px auto;
+}
+
+.dark .timer .counter-card {
+    color: #643cd3;
+}
+
+.timer .counter-card .icon {
+    font-size: 25pt;
+    color: #8a8c8f85;
+    margin-bottom: 10px;
+}
+
+
+.timer .counter-card .label {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #8a8c8f85;
+    margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%  10%;
+    flex-wrap: wrap;
+}
+
+
+.dark footer {
+    background: rgb(22, 22, 22);
+    color: #fff;
+}
+
+footer .coming-soon {
+    font-size: 20pt;
+    font-weight: 700;
+}
+
+footer img, .social .icon {
+    margin: 0 30px;
+}
+
+.social .icon {
+    margin: 10px;
+}
+
+footer .social, footer .stores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .social{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ footer .stores img {
+    margin: auto 20px;
+    width: 200px;
+}
+
+.social .icon {
+
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.social .icon.facebook {
+    background: #3b5999;
+    color: #fff;
+}
+.social .icon.twitter {
+    background: #55acee;
+    color: #fff;
+}
+.social .icon.dribble {
+    background: #ea4cb9;
+    color: #fff;
+}
+.social .icon.google {
+    background: #dd4b39;
+    color: rgb(255, 255, 255);
+}
+
+hr {
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+.copyright {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: 15pt;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px)  {
+    .hero {
+        margin-top: 10vh;
+        padding: 7%  7%;
+    }
+
+    .hero .hero-content {
+        width: 90%;
+        color: #fff;
+    }
+
+    .hero .hero-content .hero-heading {
+        font-size: 20pt;
+        font-weight: 600;
+    }
+    
+    .hero .hero-content .hero-text  {
+        font-size: 18px;
+    }
+
+    .sec-2 {
+        padding-top: 10vh;
+        padding: 7%  2%;
+    }
+
+    .sec-2 .title-heading {
+        font-size: 20pt;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .sec-2 .title-text  {
+        font-size: 18px;
+    }
+
+    .sec-2 .wallet {
+        width: 150px;
+        margin: 12px 10px;
+    }
+
+    .box {
+        margin: 10px;
+    }
+
+    footer .stores img {
+        margin: 10px 15px;
+        width: 100px;
+    }
+
+    #count{
+        padding: 0%;
+        margin: 0%;
+    }
+
+
+    .timer .counter-card {
+        font-size: 20pt;
+       justify-content: center;
+    }
+
+    .timer .counter-card .icon {
+        font-size: 20pt;
+        color: #8a8c8f85;
+    }
+
+    .timer .counter-card .label {
+        font-size: 13pt;
+        font-weight: 700;
+        color: #8a8c8f85;
+    }
+}
